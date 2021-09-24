@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "HCI Project access restricted"
+AuthUserFile "/home/2019/wliu99/public_html/hci/notebook/.htpasswd"
+require user rosie
+require user lukas
+require user hciagent
+require user YujingLiu
