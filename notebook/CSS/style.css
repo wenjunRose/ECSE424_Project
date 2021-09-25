@@ -1,0 +1,81 @@
+* { margin:0; padding:0; }
+
+header {
+    
+    display: flex;
+    float: left;
+    flex-direction: row;
+    justify-content: center;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgb(83, 88, 94);
+    /* Make the header stick to the top as you scroll */
+
+}
+
+.navbar-item
+{
+    margin: 8px;
+    font-size: 20px;
+}
+
+.OBody{
+    margin-top: 60px;
+    flex-direction:column;
+}
+
+.BelowTopMenu{
+    display: table;
+    flex-direction: row;
+    
+    left: 0px;
+    top: 0px;
+    margin: 0%;
+    width:100%;
+    background: rgb(245, 216, 196);
+}
+
+.asideMenu{
+    
+    background: rgb(233, 144, 84);
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    
+     /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    
+    position:absolute;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    outline:dashed red;
+}
+
+/* The navigation menu links */
+.asideMenu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+.asideMenu a:hover {
+    color: #f1f1f1;
+  }
+  
+.MainContent{
+    background: rgb(233, 211, 84);
+    margin:auto;
+    overflow:auto;
+    margin-top: 20px;
+    width:80%;
+}
