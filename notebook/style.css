@@ -3,21 +3,34 @@ html, body {
     margin:0;
     padding:0;
 }
-header{
-    padding:15px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    width: 100%;
-    background: rgb(30, 27, 48);
-    position: fixed; 
-    font-size: 18px;
-    top: 0;
-    height: 60px !important;
-    opacity:.8;
+
+
+h1{
+	text-align: center;
 }
-.navbar-item:hover{
-    color: #f1f1f1;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
 
 .content {
@@ -41,7 +54,7 @@ header{
     flex-direction: column;
     justify-content:space-around;
     background: rgb(158, 203, 255);
-    top:60px;
+    top:0;
     bottom:30px;
     width: 20%;
     position:absolute;
@@ -82,6 +95,12 @@ header{
     box-sizing:border-box;
     color:rgba(0, 0, 2, 0.651);
     
+}
+
+table{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 footer {
