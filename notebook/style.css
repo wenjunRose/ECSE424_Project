@@ -77,7 +77,15 @@ li a:hover {
 .Sidebar11:hover{
     color: #f1f1f1;
 }
-
+.Sidebar12
+{
+  text-decoration-line: none;
+  color: rgb(21, 16, 51);
+  
+}
+.Sidebar12:hover{
+  color: #f1f1f1;
+}
 
 
 #scrollable2 {
