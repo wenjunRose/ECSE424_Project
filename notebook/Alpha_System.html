@@ -1,1 +1,140 @@
-<p>Alpha SYstem Page</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Evaluation</title>
+</head>
+
+
+<!-- Always on top: Position Fixed-->
+<ul>
+    <li><b><a href="index.html">Home</a></b></li>
+    <li><b><a href="Observation.html">Observations</a></b></li>
+    <li><b><a href="lowFId.html">Low-Fi Prototype</a></b> </li>
+    <li><a href="HighFi.html"><b>Computer Prototype</b></a></li>
+    <li><a href="Evaluation.html"><b>Evaluation</b></a></li>
+    <li><a href="#"><b>Alpha_System</b></a></li>
+    <li><a href="#"><b>Beta_System</b></a></li>
+</ul>
+<!-- Fixed size after header-->
+<body>
+<div class="content">
+    <!-- Always on top. Fixed position, fixed width, relative to content width-->
+    <div class="sidebar1">
+        <a class="Sidebar11" href="#Design evolution"><b>1.Design evolution</b></a>
+        <ol><a class="Sidebar12" href="#frequency light sound">frequency light sound<br></a>
+            <a class="Sidebar12" href="#Power supplies and device connection problem">Power supplies and device connection problem<br></a>
+            <a class="Sidebar12" href="#Encapsulation">Encapsulation <br></a>
+            <a class="Sidebar12" href="#Improvement with the Alert">Improvement with the Alert<br></a>
+        </ol>
+
+        <a class="Sidebar11" href="#prototype revision"><b>2. prototype revision</b></a>
+
+        <a class="Sidebar11" href="#refinement of user manual or installation guide"><b>3. refinement of user manual or installation guide</b></a>
+
+
+
+    </div>
+    <!-- Scrollable div with main content -->
+    <div id="scrollable2">
+
+        <div id="Design evolution">
+
+            <div><h1>Design evolution</h1>
+                <h3 id="frequency light sound">frequency light sound</h3>
+                <ol>
+                    frequency selection: according to the feedback gathered by the post-questionnaire, the best-fit frequency for the led light is medium and the frequency for the audio feedback is also medium. These will be the final decision of both the frequency for led-light and audio feedback.
+
+                </ol>
+                <ol>
+                    led-light color selection: according to the feedback gathered by the post-questionnaire, the color we will implement on the alph system will be red. Since most of the participants find out it is more effective to be alerted in the color of red.
+
+                </ol>
+                <ol>
+                    audio feedback intensity selection: according to the feedback we gathered by the post-questionnaire, the intensity we will implement on the alph system will be medium since all of the participants prefer the medium intensity, it is not distracted yet could still be effective enough to alert the user.
+
+                </ol>
+                <br/>
+
+            </div>
+            <h3 id="Power supplies and device connection problem">Power supplies and device connection problem</h3>
+            <p>The screenshots and video recordings are as follow:</p>
+            <div>
+                <p>We did not mention the power supplies problem in the computer prototype page. We are going to use two 9V rechargeable batteries as power to keep supplying electricity to Arduino, LED light and Active buzzer. The communication from breadboard to arduino, arduino to arduino is achieved by jumper wire (male to male).
+                    In other words, everything is basically connected by wires.
+                </p>
+
+            </div>
+
+            <div>
+                <h3 id="Encapsulation">Encapsulation</h3>
+                <ol>
+                    In concern of the problem “Elements are unclear with prototype, there is no instruction showing how to install sensor and light indicator” raised by peer evaluation.
+                    We actually forgot to mention the sensor and light installation, because the system already comes up in our mind, we know what it looks like so we neglect the details of how to install sensor and LED light. We plan to encapsulate the 2 parts of our device individually. For the ultrasonic part, our solution is: put arduino + sensor into a box, you can find more details in our design revolution No. 2. And same thing, arduino + LED light + buzzer go into a box too. Each box has one hole to show the light: sensor box shows if the sensor is working. The LED with buzzer box shows if the car is approaching from the back.
+
+                </ol>
+                <ol>
+                    After all element encapsulation is done, two boxes attach the bicycle with nylon magic tape. The sensor box will be attached under the bicycle seat, and sensor + LED goes to the middle of the handlebar.
+
+                </ol>
+                <ol>
+                    For the alerting part, similarly, the Arduino will also be encapsulated in a small box with the buzzer and LED light extending outside. The box will be assembled along with a bracelet to help fix the bicycle handle as shown in the Unity project in Computer Prototype.
+                </ol>
+                <br/>
+
+            </div>
+
+            <div>
+                <h3 id=" Improvement with the Alert"> Improvement with the Alert</h3>
+                <ol>
+                    After doing the research, we realize how dangerous cycling is on the road. We decide to add a delay to the alert to make sure the cyclist is staying in a safe range.
+
+                </ol>
+
+                <ol>
+                    So our design evolution for alert is: set a 2 seconds delay buzzing duration. When the object is out of the sensor detection range, it will keep buzzing for 2 seconds. Our choice of 2 seconds as alert duration is based on the “two seconds rule” and results from research. References link shows below:<br/>
+                    <a href="https://en.wikipedia.org/wiki/Two-second_rule">https://en.wikipedia.org/wiki/Two-second_rule</a>
+                    <a href="https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx">https://www.ncsl.org/research/transportation/safely-passing-bicyclists.aspx</a>
+                    <a href="https://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf">https://hfast.mie.utoronto.ca/wp-content/uploads/Publications/DAddario_Pamela_M_201403_MASc_thesis_final.pdf</a>
+                    <a href="https://saaq.gouv.qc.ca/en/tourists-and-newcomers/tourists/good-driving-in-quebec-means">https://saaq.gouv.qc.ca/en/tourists-and-newcomers/tourists/good-driving-in-quebec-means</a>
+                </ol>
+
+                <ol>
+                    Delay alert for 2 seconds allows users to move further from the car after the car is out of the detect range, which can help cyclists stay more safe (increase safeness).
+
+                </ol>
+
+            </div>
+        </div>
+        <br/><br/>
+        <div id="prototype revision"> <h1>2. prototype revision</h1>
+
+            <br/><br/>
+        </div>
+
+        <div id="refinement of user manual or installation guide">
+
+            <h1>3. refinement of user manual or installation guide</h1>
+
+            <p>Our newest version user manual can be found here:<a href="https://docs.google.com/document/d/1sPED_dzJhybqljfpltA5OGBhyS6U621TfgkJH5Y0vGs/edit#"> here</a><br/>
+                Our alpha system user manual includes computer prototype and alpha system instruction.
+            </p>
+
+
+
+        </div>
+        <br/><br/>
+
+
+        <br/><br/><br/>
+    </div>
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+
+</div>
+<!-- Always at the end of the page -->
+<footer>
+    Last update: Nov.3 2021.
+</footer>
+</body>
+</html>
