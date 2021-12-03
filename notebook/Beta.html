@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Beta system</title>
+</head>
+
+
+<!-- Always on top: Position Fixed-->
+<ul>
+    <li><b><a href="index.html">Home</a></b></li>
+    <li><b><a href="Observation.html">Observations</a></b></li>
+    <li><b><a href="lowFId.html">Low-Fi Prototype</a></b> </li>
+    <li><a href="HighFi.html"><b>Computer Prototype</b></a></li>
+    <li><a href="Evaluation.html"><b>Evaluation</b></a></li>
+    <li><a href="Alpha_System.html"><b>Alpha_System</b></a></li>
+    <li><a href="Beta.html"><b>Beta_System</b></a></li>
+</ul>
+<!-- Fixed size after header-->
+<body>
+<div class="content">
+    <!-- Always on top. Fixed position, fixed width, relative to content width-->
+    <div class="sidebar1">
+        <a class="Sidebar11" href="#Design evolution"><b>1.Design Evolution</b></a>
+
+        <a class="Sidebar11" href="#prototype revision"><b>2. Prototype Revision</b></a>
+
+        <a class="Sidebar11" href="#refinement of user manual or installation guide"><b>3. Refinement of User Manual</b></a>
+    </div>
+    <!-- Scrollable div with main content -->
+    <div id="scrollable2">
+
+        <div id="Design evolution">
+
+            <div><h1>Design evolution</h1>
+                <h3>1. Add Bottom to deactivate and activate the  alert device:</h3>
+                <p>
+                    We add a button on the alert device to deactivate the alert device when it is buzzing. We consider
+                    the use case that users would get into a situation that a car will always be behind them and it will
+                    cause the system to detect a car is behind and cause the alert device to always buzz. Thus, we add a
+                    button to allow the user to freely deactivate the alert device and activate it.
+                </p>
+                <br/>
+                <h3>2. Arduino communicate via bluetooth </h3>
+                <p>
+                    In the alpha system we use jumper wire to establish communication between the two arduinos due to th
+                    e fact that we did not have any bluetooth component on our hand during the implementation. After the
+                    alpha system, we successfully integrate the bluetooth component inside our system and achieve the co
+                    mmunication between the two arduinos and it brings great benefit to the encapsulation.
+                </p>
+                <br/>
+                <h3>3. Sensor detect range</h3>
+                <p>
+                    After the continuation of development and searching, we came to an agreement to set the ultrasonic s
+                    ensor detect range to be 1.5 m. Since according to the current law, it is obligatory for the driver
+                    to maintain a 1.5m distance between the bike, so we would definitely want to warn the user when a ca
+                    r is approaching the user at this range and give them enough time to react.
+                </p>
+                <br/>
+                <h3>4. Encapsulation box</h3>
+                <p>In the alpha system we use the cardboard to build the box for encapsulation of the system. It has com
+                    e to our mind that using cardboard to build the box is unstable and easy to break. Thus, we decide t
+                    o switch to using stone clay to build the box for the sensor and wood box for the alert device. It is
+                    more stable and has more endurability and could allow our system to be performed in some more extreme
+                    conditions.
+                </p>
+                <br/>
+                <h3>5. Alert stops after one second if we have a car always behind the bike</h3>
+                <p>We include a new feature inside our system that when we inside a situation that a car always behind t
+                    he bike and it is also inside the detect range of our system such when a bike is waiting in front of
+                    the traffic light and a car is behind it, it will cause our alpha system to keep buzzing and blinking
+                    . We updated the system that it will only alert the user for one second and then it will stop. If th
+                    e car is out of the detect range and enters again, the system will alert the user again.
+                </p>
+
+            </div>
+        </div>
+        <br/><br/>
+        <div id="prototype revision">
+            <h1>2. Prototype Revision</h1>
+            <p>
+                <b>Encapsulated sensor:</b>
+                    <br/><br/>
+                <img src="1.jpg" width="30%" height="30%">
+                <img src="2.jpg" width="30%" height="30%">
+                <img src="3.jpg" width="30%" height="30%">
+            </p>
+
+            <p>
+                <b>Encapsulated alert device:</b>
+                <br/><br/>
+                <img src="4.jpg" width="30%" height="30%">
+                <img src="5.jpg" width="30%" height="30%">
+            </p>
+
+            <p>
+                <b>System when turned on:</b>
+                <br/><br/>
+                <img src="6.jpg" width="30%" height="30%">
+                <img src="7.jpg" width="30%" height="30%">
+            </p>
+
+            <p>
+                <b>install on the bike:</b>
+                <br/><br/>
+                <img src="8.jpg" width="30%" height="30%">
+                <img src="9.jpg" width="30%" height="30%">
+                <img src="10.jpg" width="30%" height="30%">
+            </p>
+            <br/>
+            <br/>
+
+            <p>
+                <h3>Demo for the System</h3>
+                1. Show the detect range and alerting duration when a car is inside the detect range.
+                <br/><br/>
+                <video width="60%" height="60%" controls><source src="1v.mp4" type="video/mp4"></video>
+                <br/><br/><br/>
+                2. Show the alert device will stop if a car is always inside the detect range.
+                <br/><br/><br/>
+                <video width="60%" height="60%" controls><source src="2v.mp4" type="video/mp4"></video>
+                <br/>
+                <br/><br/><br/>
+                3. Show the button could interrupt the alert device
+                <br/><br/><br/>
+                <video width="60%" height="60%"controls><source src="3v.mp4" type="video/mp4"></video>
+                <br/>
+                <br/><br/><br/>
+                4. Simulation actually riding a bike and then a car is approaching(as safety issues and recording constraint we choose to let one of the teammates to pretend to be a car)
+                <br/><br/><br/>
+                <video width="60%" height="60%" controls><source src="4v.mp4" type="video/mp4"></video>
+                <br/><br/>
+
+            </p>
+        </div>
+
+        <div id="refinement of user manual or installation guide">
+
+            <h1>3. Refinement of User Manual</h1>
+
+            <p>
+                Our newest version user manual can be found here:<br/>
+                Our beta system user manual includes computer prototype and beta system instruction.
+                <br/><br/>
+                <iframe src="BetaUser.pdf" width="100%" height="500px"></iframe>
+            </p>
+
+
+
+        </div>
+        <br/><br/>
+
+
+        <br/><br/><br/>
+    </div>
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+
+</div>
+<!-- Always at the end of the page -->
+<footer>
+    Last update: Dec.2 2021.
+</footer>
+</body>
+</html>
